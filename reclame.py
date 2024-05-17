@@ -1,3 +1,5 @@
+from algemene_functies import mijn_functie_2
+
 def aanbieding_1(smaak, prijs, korting):
     korting = (float(prijs) * 0.9)
     uitvoer = (f"Vandaag in de aanbieding: Emmertje ijs (1 liter) in de smaak {smaak}, van {prijs} euro voor {korting}")
@@ -37,8 +39,8 @@ def meervoudig(invoer_lijst):
 meervoudig("invoer_lijst")
 
 def combinatie(invoer_lijst_2):
-    invoer_lijst_2 = min(omzet), max(omzet)
-    korte_lijst = invoer_lijst_2
-    print(korte_lijst)
+    korte_lijst = laag_en_hoog(invoer_lijst_2)
+    uitvoer = mijn_functie_2(korte_lijst[0], korte_lijst[1])
+    return uitvoer
 combinatie("korte_lijst")
 
